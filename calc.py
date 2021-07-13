@@ -1,4 +1,5 @@
 def calculator():
-    pass
+    exp = input()
+    return print(eval(exp))
 
-calculator(2,2,'+')
+calculator()
