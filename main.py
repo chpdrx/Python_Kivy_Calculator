@@ -4,6 +4,7 @@ from kivy.config import Config
 Config.set('graphics', 'resizable', False)
 Config.set('graphics', 'width', '290')
 Config.set('graphics', 'height', '362')
+import keyboard
 
 class MyBoxLayout(BoxLayout):
     def press_btn1(self):
