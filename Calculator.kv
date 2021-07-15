@@ -24,7 +24,7 @@
         halign: 'right'
     GridLayout:
         cols: 3
-        rows: 5
+        rows: 6
         spacing: 3
         Button:
             id: button1
@@ -114,5 +114,17 @@
             id: result
             on_press: root.press_result()
             text: '='
+            width: 50
+            height: 100
+        Button:
+            width: 50
+            height: 100
+        Button:
+            id: clear
+            on_press: root.press_clear()
+            text: 'C'
+            width: 50
+            height: 100
+        Button:
             width: 50
             height: 100

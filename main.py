@@ -54,6 +54,9 @@ class MyBoxLayout(BoxLayout):
     def press_div(self):
         self.text_input.text += self.div.text
 
+    def press_clear(self):
+        self.text_input.text = ''
+
 class Calculator(App):
     def build(self):
         return MyBoxLayout()
