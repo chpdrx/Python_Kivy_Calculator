@@ -37,7 +37,10 @@ class MyBoxLayout(BoxLayout):
         self.text_input.text += self.button0.text
 
     def press_result(self):
-        self.text_input.text = str(eval(self.text_input.text))
+        if type(eval(self.text_input.text)) == float and eval(self.text_input.text)%1==0:
+            self.text_input.text = str(int(eval(self.text_input.text)))
+        else:
+            self.text_input.text = str(eval(self.text_input.text))
 
     def press_summ(self):
         self.text_input.text += self.summ.text
