@@ -3,7 +3,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.config import Config
 Config.set('graphics', 'resizable', False)
 Config.set('graphics', 'width', '290')
-Config.set('graphics', 'height', '309')
+Config.set('graphics', 'height', '362')
 
 class MyBoxLayout(BoxLayout):
     def press_btn1(self):
