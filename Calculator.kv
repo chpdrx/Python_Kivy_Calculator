@@ -2,8 +2,19 @@
     text_input: text_input
     button1: button1
     button2: button2
+    button3: button3
+    button4: button4
+    button5: button5
+    button6: button6
+    button7: button7
+    button8: button8
+    button9: button9
+    button0: button0
     result: result
     summ: summ
+    sub: sub
+    multi: multi
+    div: div
     orientation: 'vertical'
     TextInput:
         id: text_input
@@ -28,30 +39,44 @@
             width: 50
             height: 100
         Button:
+            id: button3
+            on_press: root.press_btn3()
             text: '3'
             width: 50
             height: 100
         Button:
+            id: button4
+            on_press: root.press_btn4()
             text: '4'
             width: 50
             height: 100
         Button:
+            id: button5
+            on_press: root.press_btn5()
             text: '5'
             width: 50
             height: 100
         Button:
+            id: button6
+            on_press: root.press_btn6()
             text: '6'
             width: 50
             height: 100
         Button:
+            id: button7
+            on_press: root.press_btn7()
             text: '7'
             width: 50
             height: 100
         Button:
+            id: button8
+            on_press: root.press_btn8()
             text: '8'
             width: 50
             height: 100
         Button:
+            id: button9
+            on_press: root.press_btn9()
             text: '9'
             width: 50
             height: 100
@@ -62,18 +87,26 @@
             width: 50
             height: 100
         Button:
+            id: button0
+            on_press: root.press_btn0()
             text: '0'
             width: 50
             height: 100
         Button:
+            id: sub
+            on_press: root.press_sub()
             text: '-'
             width: 50
             height: 100
         Button:
+            id: multi
+            on_press: root.press_multi()
             text: '*'
             width: 50
             height: 100
         Button:
+            id: div
+            on_press: root.press_div()
             text: '/'
             width: 50
             height: 100

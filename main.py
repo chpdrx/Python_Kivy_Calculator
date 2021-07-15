@@ -12,11 +12,44 @@ class MyBoxLayout(BoxLayout):
     def press_btn2(self):
         self.text_input.text += self.button2.text
 
+    def press_btn3(self):
+        self.text_input.text += self.button3.text
+
+    def press_btn4(self):
+        self.text_input.text += self.button4.text
+
+    def press_btn5(self):
+        self.text_input.text += self.button5.text
+
+    def press_btn6(self):
+        self.text_input.text += self.button6.text
+
+    def press_btn7(self):
+        self.text_input.text += self.button7.text
+
+    def press_btn8(self):
+        self.text_input.text += self.button8.text
+
+    def press_btn9(self):
+        self.text_input.text += self.button9.text
+
+    def press_btn0(self):
+        self.text_input.text += self.button0.text
+
     def press_result(self):
         self.text_input.text = str(eval(self.text_input.text))
 
     def press_summ(self):
         self.text_input.text += self.summ.text
+
+    def press_sub(self):
+        self.text_input.text += self.sub.text
+
+    def press_multi(self):
+        self.text_input.text += self.multi.text
+
+    def press_div(self):
+        self.text_input.text += self.div.text
 
 class Calculator(App):
     def build(self):
