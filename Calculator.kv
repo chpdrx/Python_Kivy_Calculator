@@ -1,2 +1,85 @@
-Button:
-    text: 'Hello from test.kv'
+<MyBoxLayout>:
+    text_input: text_input
+    button1: button1
+    button2: button2
+    result: result
+    summ: summ
+    orientation: 'vertical'
+    TextInput:
+        id: text_input
+        text: ''
+        font_size: 30
+        size_hint: 1, .2
+        halign: 'right'
+    GridLayout:
+        cols: 3
+        rows: 5
+        spacing: 3
+        Button:
+            id: button1
+            on_press: root.press_btn1()
+            text: '1'
+            width: 50
+            height: 100
+        Button:
+            id: button2
+            on_press: root.press_btn2()
+            text: '2'
+            width: 50
+            height: 100
+        Button:
+            text: '3'
+            width: 50
+            height: 100
+        Button:
+            text: '4'
+            width: 50
+            height: 100
+        Button:
+            text: '5'
+            width: 50
+            height: 100
+        Button:
+            text: '6'
+            width: 50
+            height: 100
+        Button:
+            text: '7'
+            width: 50
+            height: 100
+        Button:
+            text: '8'
+            width: 50
+            height: 100
+        Button:
+            text: '9'
+            width: 50
+            height: 100
+        Button:
+            id: summ
+            on_press: root.press_summ()
+            text: '+'
+            width: 50
+            height: 100
+        Button:
+            text: '0'
+            width: 50
+            height: 100
+        Button:
+            text: '-'
+            width: 50
+            height: 100
+        Button:
+            text: '*'
+            width: 50
+            height: 100
+        Button:
+            text: '/'
+            width: 50
+            height: 100
+        Button:
+            id: result
+            on_press: root.press_result()
+            text: '='
+            width: 50
+            height: 100
