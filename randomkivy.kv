@@ -1,11 +1,14 @@
-<randomkivy>:
+<Randomkivy>:
     text_input: text_input
     button_random: button_random
+    orientation: 'vertical'
     TextInput:
         id: text_input
         text: ''
         font_size: 30
-        size_hint: 1, .2
+        size_hint: 1, 1
+        halign: 'center'
+        is_focusable: False
     GridLayout:
         cols: 2
         rows: 1
@@ -14,11 +17,11 @@
             id: button_random
             on_press: root.press_button_random()
             text: 'Мне повезёт'
-            width: 100
+            width: 125
             height: 50
         Button:
             id: button_clear
             on_press: root.press_button_clear()
             text: 'Очистить'
-            width: 100
+            width: 125
             height: 50
