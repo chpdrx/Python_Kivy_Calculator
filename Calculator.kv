@@ -22,6 +22,8 @@
         font_size: 30
         size_hint: 1, .2
         halign: 'right'
+        multiline: False
+        on_text_validate: root.press_result()
     GridLayout:
         cols: 3
         rows: 6
