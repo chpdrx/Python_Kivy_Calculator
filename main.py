@@ -4,7 +4,6 @@ from kivy.config import Config
 Config.set('graphics', 'resizable', False)
 Config.set('graphics', 'width', '290')
 Config.set('graphics', 'height', '362')
-import keyboard
 
 class MyBoxLayout(BoxLayout):
     def press_btn1(self):
@@ -38,10 +37,13 @@ class MyBoxLayout(BoxLayout):
         self.text_input.text += self.button0.text
 
     def press_result(self):
-        if type(eval(self.text_input.text)) == float and eval(self.text_input.text)%1==0:
-            self.text_input.text = str(int(eval(self.text_input.text)))
-        else:
-            self.text_input.text = str(eval(self.text_input.text))
+        try:
+            if type(eval(self.text_input.text)) == float and eval(self.text_input.text)%1==0:
+                self.text_input.text = str(int(eval(self.text_input.text)))
+            else:
+                self.text_input.text = str(eval(self.text_input.text))
+        except:
+            self.press_clear()
 
     def press_summ(self):
         self.text_input.text += self.summ.text
